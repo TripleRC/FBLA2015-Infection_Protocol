@@ -1,0 +1,32 @@
+Graphics
+-Nice textures
+-Animations
+
+Gameplay:
+Shoot the circuits viruses pop from to beat level
+Add dialogue
+-Messages from user: get ridda those viruses, Algo
+Popups from viruses
+-Popups have questions that you can answer right/wrong
+-wrong = freeze, spawn enemies
+-right = gain health, powerup
+
+Powerups
+-increased rate of fire
+-invincibility
+-stronger bullets
+-move faster
+
+Add some themed viruses - I LOVE YOU, Heartbleed
+
+More levels
+
+Better camera movement
+
+More random objects
+
+Death = popups -> BSOD
+
+Add main menu/pause screen
+
+When we enter the room make viruses start spawning
