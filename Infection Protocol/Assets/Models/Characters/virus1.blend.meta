@@ -23,12 +23,14 @@ ModelImporter:
     2300006: Cone_003
     2300008: Cone_004
     2300010: Sphere
+    2300012: //RootNode
     3300000: Cone
     3300002: Cone_001
     3300004: Cone_002
     3300006: Cone_003
     3300008: Cone_004
     3300010: Sphere
+    3300012: //RootNode
     4300000: Cone_004
     4300002: Cone_003
     4300004: Cone_002

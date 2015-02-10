@@ -34,6 +34,18 @@ ModelImporter:
     100056: RightWrist
     100058: Skull
     100060: Spine
+    100062: Cube_MeshPart0
+    100064: Cube_MeshPart1
+    100066: LeftHeel
+    100068: LeftLowerLeg
+    100070: LeftPelvis
+    100072: LeftToe
+    100074: LeftUpperLeg
+    100076: RightHeel
+    100078: RightLowerLeg
+    100080: RightPelvis
+    100082: RightToe
+    100084: RightUpperLeg
     400000: //RootNode
     400002: Armature
     400004: Bone_008
@@ -65,12 +77,30 @@ ModelImporter:
     400056: RightWrist
     400058: Skull
     400060: Spine
+    400062: Cube_MeshPart0
+    400064: Cube_MeshPart1
+    400066: LeftHeel
+    400068: LeftLowerLeg
+    400070: LeftPelvis
+    400072: LeftToe
+    400074: LeftUpperLeg
+    400076: RightHeel
+    400078: RightLowerLeg
+    400080: RightPelvis
+    400082: RightToe
+    400084: RightUpperLeg
     2300000: Cube
     2300002: Cube_001
+    2300004: Cube_MeshPart0
+    2300006: Cube_MeshPart1
     3300000: Cube
     3300002: Cube_001
+    3300004: Cube_MeshPart0
+    3300006: Cube_MeshPart1
     4300000: Cube
     4300002: Cube_001
+    4300004: Cube_MeshPart0
+    4300006: Cube_MeshPart1
     7400000: Default Take
     9500000: //RootNode
   materials:
