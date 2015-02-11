@@ -1,14 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Camera\CameraFollow.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Managers\GameOverManager.cs">
     <Files>
+      <File FileName="Infection Protocol.sln" Line="58" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player\PlayerShooting.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Enemy\EnemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="22" Column="44" />
-      <File FileName="Assets\Scripts\Camera\CameraFollow.cs" Line="18" Column="3" />
-      <File FileName="Assets\Scripts\Managers\GameOverManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FirstPersonController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerHealth.cs" Line="42" Column="104" />
+      <File FileName="Assets\Scripts\Camera\CameraFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Managers\GameOverManager.cs" Line="6" Column="36" />
+      <File FileName="Assets\Scripts\MainMenuScript.cs" Line="15" Column="3" />
+      <File FileName="Assets\Scripts\Managers\ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Enemy\EnemyAttack.cs" Line="68" Column="32" />
+      <File FileName="Assets\Scripts\Managers\EnemyManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
