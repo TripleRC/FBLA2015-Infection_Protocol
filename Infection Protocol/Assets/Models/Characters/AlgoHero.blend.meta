@@ -46,6 +46,26 @@ ModelImporter:
     100080: RightPelvis
     100082: RightToe
     100084: RightUpperLeg
+    100086: Cube_MeshPart2
+    100088: RightForeArm_001
+    100090: RightForeArm_002
+    100092: RightForeArm_003
+    100094: RightForeArm_004
+    100096: RightForeArm_005
+    100098: RightForeArm_009
+    100100: RightForeArm_010
+    100102: RightForeArm_011
+    100104: RightForeArm_013
+    100106: RightForeArm_014
+    100108: RightForeArm_015
+    100110: RightForeArm_016
+    100112: RightForeArm_017
+    100114: RightForeArm_018
+    100116: RightForeArm_019
+    100118: RightForeArm_020
+    100120: RightForeArm_021
+    100122: RightPelvis_001
+    100124: RightShoulder
     400000: //RootNode
     400002: Armature
     400004: Bone_008
@@ -89,18 +109,41 @@ ModelImporter:
     400080: RightPelvis
     400082: RightToe
     400084: RightUpperLeg
+    400086: Cube_MeshPart2
+    400088: RightForeArm_001
+    400090: RightForeArm_002
+    400092: RightForeArm_003
+    400094: RightForeArm_004
+    400096: RightForeArm_005
+    400098: RightForeArm_009
+    400100: RightForeArm_010
+    400102: RightForeArm_011
+    400104: RightForeArm_013
+    400106: RightForeArm_014
+    400108: RightForeArm_015
+    400110: RightForeArm_016
+    400112: RightForeArm_017
+    400114: RightForeArm_018
+    400116: RightForeArm_019
+    400118: RightForeArm_020
+    400120: RightForeArm_021
+    400122: RightPelvis_001
+    400124: RightShoulder
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_MeshPart0
     2300006: Cube_MeshPart1
+    2300008: Cube_MeshPart2
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_MeshPart0
     3300006: Cube_MeshPart1
+    3300008: Cube_MeshPart2
     4300000: Cube
     4300002: Cube_001
     4300004: Cube_MeshPart0
     4300006: Cube_MeshPart1
+    4300008: Cube_MeshPart2
     7400000: Default Take
     9500000: //RootNode
   materials:
