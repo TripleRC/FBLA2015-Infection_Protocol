@@ -10,6 +10,11 @@ public class MainMenuScript : MonoBehaviour {
 	public Text about;
 	public Text controls;
 
+	void Awake() {
+		EnemyManager.enemyCount = 0;
+		EnemyManager.enemiesToSpawn = 128;
+		ScoreManager.score = 0;
+	}
 
 	public void OnClickPlay(){
 		Application.LoadLevel("level 01");

@@ -1,5 +1,10 @@
 ﻿using UnityEngine;
 
+/**
+ * This script handles the player's rotation and movement
+ * it makes the player face the ground the mouse is pointed towards
+ * and makes the player move when appropriate input is applied
+ * */
 public class PlayerMovement : MonoBehaviour
 {
 	public float speed = 6f;

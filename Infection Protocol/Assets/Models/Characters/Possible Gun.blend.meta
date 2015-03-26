@@ -2,7 +2,21 @@ fileFormatVersion: 2
 guid: 555a4ea98b8b65e419cdbf3aa6d47e38
 ModelImporter:
   serializedVersion: 16
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: Alpha_Ray_Gun
+    100002: Cylinder
+    100004: //RootNode
+    400000: Alpha_Ray_Gun
+    400002: Cylinder
+    400004: //RootNode
+    2300000: Alpha_Ray_Gun
+    2300002: Cylinder
+    3300000: Alpha_Ray_Gun
+    3300002: Cylinder
+    4300000: Cylinder
+    4300002: Alpha_Ray_Gun
+    7400000: Default Take
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

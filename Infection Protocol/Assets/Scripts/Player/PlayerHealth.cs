@@ -2,6 +2,11 @@
 using UnityEngine.UI;
 using System.Collections;
 
+/**
+ * This script handles the player's health,
+ * allowing other scripts to damage the player
+ * and making the player play an audio clip on death
+ * */
 public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 100;

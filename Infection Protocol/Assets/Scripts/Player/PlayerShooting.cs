@@ -1,5 +1,13 @@
 ﻿using UnityEngine;
 
+/**
+ * This script handles the player's
+ * shooting. When the shoot button is pressed, it 
+ * sets the particle effect and line rendered on
+ * and sees if the gun is pointed at an object with
+ * an EnemyHealth script. If it is, it damages the enemy
+ * it's pointed at
+ * */
 public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;

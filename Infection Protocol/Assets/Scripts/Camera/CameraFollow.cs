@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This script is used to have the camera follows a target
+ * In this case, the target is the player
+ * It keeps a fixed offset from the target, the same one that 
+ * it has when the game starts
+ * */
 public class CameraFollow : MonoBehaviour {
 
 	public Transform target;

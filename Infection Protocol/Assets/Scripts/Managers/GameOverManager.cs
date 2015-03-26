@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+/**
+ * This script makes the game over animation appear when the player dies, then
+ * sets the level to the main menu
+ * */
 public class GameOverManager : MonoBehaviour
 {
     public PlayerHealth playerHealth;

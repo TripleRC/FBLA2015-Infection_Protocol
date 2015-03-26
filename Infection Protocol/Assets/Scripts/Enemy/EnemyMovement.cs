@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This script handles the enemy's navigator
+ * Making them move to the player while the player
+ * and enemy both have health
+ * */
 public class EnemyMovement : MonoBehaviour
 {
     Transform player;

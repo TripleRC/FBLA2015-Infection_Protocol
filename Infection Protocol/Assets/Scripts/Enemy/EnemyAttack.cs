@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This script handles an enemy's ability to attack the player.
+ * When the player's in range, at half-second intervals it makes
+ * the player take damage.
+ * */
 public class EnemyAttack : MonoBehaviour
 {
     public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 10;
-
 
     Animator anim;
     GameObject player;

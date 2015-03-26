@@ -1,5 +1,10 @@
 ﻿using UnityEngine;
 
+/**
+ * This script handles an enemy's health level
+ * handling damage, playing the death clip and
+ * having the enemy sink/destroy themselves when they die
+ * */
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 100;
@@ -66,6 +71,8 @@ public class EnemyHealth : MonoBehaviour
 
         enemyAudio.clip = deathClip;
         enemyAudio.Play ();
+
+		EnemyManager.enemyCount--;
     }
 
 
