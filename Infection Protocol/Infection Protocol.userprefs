@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Managers/EnemyManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Camera\CameraFollow.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenuScript.cs" Line="15" Column="36" />
-      <File FileName="Assets/Scripts/Managers/EnemyManager.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="138" Column="2" />
+      <File FileName="Assets\Scripts\MainMenuScript.cs" Line="45" Column="1" />
+      <File FileName="Assets\Scripts\Managers\EnemyManager.cs" Line="45" Column="1" />
+      <File FileName="Assets\Scripts\Camera\CameraFollow.cs" Line="33" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
