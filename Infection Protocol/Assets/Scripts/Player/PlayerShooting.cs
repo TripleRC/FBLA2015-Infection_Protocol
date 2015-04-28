@@ -83,6 +83,14 @@ public class PlayerShooting : MonoBehaviour
             {
                 enemyHealth.TakeDamage (damagePerShot, shootHit.point);
             }
+
+			LEDPowerup ledPU = shootHit.collider.GetComponent <LEDPowerup> ();
+			if(ledPU != null)
+			{
+				ledPU.activatePowerup();
+			}
+
+
             gunLine.SetPosition (1, shootHit.point);
         }
         else
