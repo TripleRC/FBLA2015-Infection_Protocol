@@ -15,11 +15,13 @@ public class PlayerMovement : MonoBehaviour
 	int floorMask;
 	float camRayLength = 100f;
 
+
+	/*
 	float maxTurnSpeed = 2.08f; // 3 ^ (1/1.5)
 	float minTurnSpeed = 0.01f;
 	float turnSpeedPower = 1.5f; // turnSpeeds are raised to this power;
 
-	float lastMouseX = 0;
+	float lastMouseX = 0;*/
 	// Vector3 screenCenter = new Vector3(Screen.width/2, Screen.height/2 + 7, 0); // +7 to look forward
 
 	void Awake()
@@ -35,11 +37,13 @@ public class PlayerMovement : MonoBehaviour
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
 
+		h *= 0.0f; // limit left/right movement
+
 		Move (h, v);
 		Turning ();
 		Animating (h, v);
 
-		lastMouseX = Input.mousePosition.x;
+//		lastMouseX = Input.mousePosition.x;
 
 		/*
 		if (Input.GetKey(KeyCode.Escape))
@@ -50,18 +54,54 @@ public class PlayerMovement : MonoBehaviour
 
 	void Move(float h, float v)
 	{
-		movement.Set (h, 0f, v);
+		// get angle of camera and get a rotation from it
+		float currentAngle = transform.eulerAngles.y;
+		float desiredAngle = Camera.main.transform.eulerAngles.y;
+		float angle = Mathf.LerpAngle (currentAngle, desiredAngle, Time.deltaTime * 6f);//smoothing);
+		Quaternion rotation = Quaternion.Euler (0, desiredAngle, 0);
+		
+		// set your position to the player's position with your offset, 
+		// your offset including the rotation that was just calculated
+		// transform.position = target.transform.position - (rotation * offset);
+		
+		// make the camera face the player
+		// transform.LookAt (target.transform);
+		
+		// old code for a camera that doesn't rotate
+		// Vector3 targetCamPos = target.position + offset;
+		// transform.position = Vector3.Lerp (transform.position, targetCamPos, smoothing);
 
+		movement.Set (h, 0f, v);
+		
 		movement = movement.normalized * movementSpeed * Time.deltaTime;
 
+		transform.rotation = rotation;
 		transform.Translate (movement);
 		// playerRigidBody.MovePosition (transform.position + movement);
 	}
 
 	void Turning()
 	{
-		/*Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		RaycastHit hit;
+		/*
+		// turn based on keyboard input
+		bool l = Input.GetButton ("Left Turn");
+		bool r = Input.GetButton ("Right Turn");
+
+		// if l or r but not both, turn
+		if (l ^ r) 
+		{
+			if(l)
+			{
+				transform.Rotate(Vector3.down * Time.deltaTime * turnSpeed);
+			} else
+			{
+				transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed);
+			}
+		}*/
+
+		/*
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		RaycastHit hit = ray;
 		if (Physics.Raycast (ray, hit)) {
 			Vector3 lookTarget = hit.point;
 
@@ -71,6 +111,20 @@ public class PlayerMovement : MonoBehaviour
 			float rotSpeed = turnSpeed * Time.deltaTime;
 			transform.rotation = Quaternion.RotateTowards( transform.rotation, targetRot, rotSpeed );
 		}*/
+
+		Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition);
+		
+		RaycastHit floorHit;
+		
+		if(Physics.Raycast (camRay, out floorHit, camRayLength, floorMask))
+		{
+			Vector3 playerToMouse = floorHit.point - transform.position;
+			playerToMouse.y = 0f;
+			
+			Quaternion newRotation = Quaternion.LookRotation (playerToMouse);
+			
+			playerRigidBody.MoveRotation (newRotation);
+		}
 
 		/*float currentAngle = transform.eulerAngles.y;
 		float desiredAngle = target.transform.eulerAngles.y;
@@ -82,7 +136,8 @@ public class PlayerMovement : MonoBehaviour
 		Vector3 newrotation = new Vector3 (0, Input.GetAxis ("Mouse X") - lastMouseX, 0);
 		transform.Rotate (0, transform.rotation + newrotation, 0);*/
 
-
+		/** logistic growth turning based on mouse position **/
+		/*
 		Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 
 		RaycastHit floorHit;
@@ -97,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
 
 			//playerRigidBody.MoveRotation (newRotation);
 
-			/*
+			*//*
 			float screenCenterX = Screen.width/2f;
 			float mouseX = Input.mousePosition.x;
 			float minDiffFromCenter = 0.5f;
@@ -120,12 +175,12 @@ public class PlayerMovement : MonoBehaviour
 					rotSpeed = map(mouseX, screenRightMin, screenRightMax, 0, maxTurnSpeed);
 				}
 				transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotSpeed);
-			}*/
+			}*//*
 
 			float rotSpeed = getRotationSpeed();
 			transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotSpeed);
 
-		}
+		}*/
 
 	}
 
@@ -148,7 +203,7 @@ public class PlayerMovement : MonoBehaviour
 	// P        =  M            / (1 + A         				 * e^(-kt)
 	// rotSpeed = (maxTurnSpeed / (1 + maxTurnSpeed/minTurnSpeed * e^(-8x)) ^ turnSpeedPower
 	// doesn't have to handle left/right negatives because Quaternion.RotateTwords does that
-	float getRotationSpeed()
+	/*float getRotationSpeed()
 	{
 		float rotSpeed = 0;
 		float kVal = 20f;
@@ -160,5 +215,5 @@ public class PlayerMovement : MonoBehaviour
 		rotSpeed = Mathf.Pow(rotSpeed, turnSpeedPower);
 
 		return rotSpeed;
-	}
+	}*/
 }

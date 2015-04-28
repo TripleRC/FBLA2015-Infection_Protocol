@@ -148,7 +148,153 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Alpha_Ray_Gun
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Lower_Spine
+        weight: 1
+      - path: Armature/Lower_Spine/Chest
+        weight: 1
+      - path: Armature/Lower_Spine/Chest/Head
+        weight: 1
+      - path: Armature/Upper_Arm_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Index_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Index_L/Knuckle_Index_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Index_L/Knuckle_Index_L/Mid_Index_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Index_L/Knuckle_Index_L/Mid_Index_L/Tip_Index_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Middle_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Middle_L/Knuckle_Middle_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Middle_L/Knuckle_Middle_L/Mid_Middle_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Middle_L/Knuckle_Middle_L/Mid_Middle_L/Tip_Middle_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Pinky_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Pinky_L/Knuckle_Pinky_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Pinky_L/Knuckle_Pinky_L/Mid_Pinky_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Pinky_L/Knuckle_Pinky_L/Mid_Pinky_L/Tip_Pinky_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Ring_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Ring_L/Knuckle_Ring_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Ring_L/Knuckle_Ring_L/Mid_Ring_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Ring_L/Knuckle_Ring_L/Mid_Ring_L/Tip_Ring_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Thumb_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Thumb_L/Knuckle_Thumb_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Thumb_L/Knuckle_Thumb_L/Mid_Thumb_L
+        weight: 1
+      - path: Armature/Upper_Arm_L/Lower_Arm_L/Hand_Thumb_L/Knuckle_Thumb_L/Mid_Thumb_L/Tip_Thumb_L
+        weight: 1
+      - path: Armature/Upper_Arm_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Index_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Index_R/Knuckle_Index_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Index_R/Knuckle_Index_R/Mid_Index_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Index_R/Knuckle_Index_R/Mid_Index_R/Tip_Index_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Middle_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Middle_R/Knuckle_Middle_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Middle_R/Knuckle_Middle_R/Mid_Middle_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Middle_R/Knuckle_Middle_R/Mid_Middle_R/Tip_Middle_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Pinky_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Pinky_R/Knuckle_Pinky_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Pinky_R/Knuckle_Pinky_R/Mid_Pinky_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Pinky_R/Knuckle_Pinky_R/Mid_Pinky_R/Tip_Pinky_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Ring_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Ring_R/Knuckle_Ring_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Ring_R/Knuckle_Ring_R/Mid_Ring_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Ring_R/Knuckle_Ring_R/Mid_Ring_R/Tip_Ring_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Thumb_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Thumb_R/Knuckle_Thumb_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Thumb_R/Knuckle_Thumb_R/Mid_Thumb_R
+        weight: 1
+      - path: Armature/Upper_Arm_R/Lower_Arm_R/Hand_Thumb_R/Knuckle_Thumb_R/Mid_Thumb_R/Tip_Thumb_R
+        weight: 1
+      - path: Armature/Upper_Leg_L
+        weight: 1
+      - path: Armature/Upper_Leg_L/Lower_Leg_L
+        weight: 1
+      - path: Armature/Upper_Leg_L/Lower_Leg_L/Foot_L
+        weight: 1
+      - path: Armature/Upper_Leg_R
+        weight: 1
+      - path: Armature/Upper_Leg_R/Lower_Leg_R
+        weight: 1
+      - path: Armature/Upper_Leg_R/Lower_Leg_R/Foot_R
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube/Cube_MeshPart0
+        weight: 1
+      - path: Cube/Cube_MeshPart1
+        weight: 1
+      - path: Cube/Cube_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

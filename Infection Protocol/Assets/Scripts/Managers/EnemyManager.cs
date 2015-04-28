@@ -9,7 +9,7 @@
 public class EnemyManager : MonoBehaviour
 {
 	public static int enemyCount = 0;
-	public static int enemiesToSpawn = 128;
+	public static int enemiesToSpawn = 32;
 
 	public PlayerHealth playerHealth;
     public GameObject enemy;

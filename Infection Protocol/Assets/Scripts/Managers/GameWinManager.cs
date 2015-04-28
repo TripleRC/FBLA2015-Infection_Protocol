@@ -9,6 +9,7 @@ public class GameWinManager : MonoBehaviour {
 
 	public PlayerHealth playerHealth;
 	public float restartDelay = 5f; //5f;
+	public string nextLevel;
 	
 	Animator anim;
 	float restartTimer;
@@ -27,7 +28,7 @@ public class GameWinManager : MonoBehaviour {
 			restartTimer += Time.deltaTime;
 			if(restartTimer >= restartDelay) {
 				// Application.LoadLevel(Application.loadedLevel);
-				Application.LoadLevel("main menu");
+				Application.LoadLevel(nextLevel);
 			}
 		}
 	}

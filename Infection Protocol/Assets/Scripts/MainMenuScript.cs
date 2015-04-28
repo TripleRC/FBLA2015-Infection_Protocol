@@ -17,7 +17,7 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void OnClickPlay(){
-		Application.LoadLevel("level 01");
+		Application.LoadLevel("tutorial");
 	}
 
 	public void OnClickAbout(){

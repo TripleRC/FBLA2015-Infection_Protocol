@@ -33,6 +33,9 @@ public class CameraFollow : MonoBehaviour {
 		// allow limit pitching of camera
 		offset.y = map (Input.mousePosition.y, 0, Screen.height, offsetOrig.y - 3f, offsetOrig.y + 0.5f);
 
+		// yaw/turn camera based on mouse x/y
+		offset.x = map (Input.mousePosition.x, 0, Screen.width, offsetOrig.x - 3f, offsetOrig.x + 3f);
+
 		// get angle of player and get a rotation from it
 		// float currentAngle = transform.eulerAngles.y;
 		float desiredAngle = target.transform.eulerAngles.y;
@@ -53,7 +56,7 @@ public class CameraFollow : MonoBehaviour {
 
 	// maps input from input range to output range
 	// e.g. map(0.5, 0, 1, 10, 20) => 15
-	float map(float input, float inMin, float inMax, float outMin, float outMax)
+	public static float map(float input, float inMin, float inMax, float outMin, float outMax)
 	{
 		return outMin + (outMax - outMin) * ((input - inMin)/(inMax - inMin));
 	}
