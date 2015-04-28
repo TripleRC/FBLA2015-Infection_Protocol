@@ -21,7 +21,7 @@ public class GameWinManager : MonoBehaviour {
 	
 	void Update()
 	{
-		if (EnemyManager.enemiesToSpawn == 0 && EnemyManager.enemyCount == 0 && playerHealth.currentHealth > 0)
+		if (EnemyManager.enemiesToSpawn == 0 || EnemyManager.enemyCount == 0 || playerHealth.currentHealth > 0)
 		{
 			anim.SetTrigger("GameWin");
 			Debug.Log("game won");

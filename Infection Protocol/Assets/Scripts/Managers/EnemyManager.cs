@@ -9,7 +9,7 @@
 public class EnemyManager : MonoBehaviour
 {
 	public static int enemyCount = 0;
-	public static int enemiesToSpawn = 32;
+    public static int enemiesToSpawn = 32;
 
 	public PlayerHealth playerHealth;
     public GameObject enemy;
@@ -22,6 +22,11 @@ public class EnemyManager : MonoBehaviour
         InvokeRepeating ("Spawn", spawnTime, spawnTime);
     }
 
+	void Awake()
+	{
+		enemyCount = -96;
+	
+	}
 
     void Spawn ()
     {

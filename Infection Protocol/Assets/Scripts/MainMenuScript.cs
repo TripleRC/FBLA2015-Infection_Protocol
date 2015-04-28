@@ -12,7 +12,7 @@ public class MainMenuScript : MonoBehaviour {
 
 	void Awake() {
 		EnemyManager.enemyCount = 0;
-		EnemyManager.enemiesToSpawn = 128;
+		EnemyManager.enemiesToSpawn = 32;
 		ScoreManager.score = 0;
 	}
 

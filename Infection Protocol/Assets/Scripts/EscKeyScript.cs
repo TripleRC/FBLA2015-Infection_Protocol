@@ -15,7 +15,7 @@ public class EscKeyScript : MonoBehaviour {
 			if(Application.loadedLevelName == "main menu") {
 				Application.Quit();
 			}
-			else if(Application.loadedLevelName == "level 01") {
+			else if(Application.loadedLevelName == "level 01" || Application.loadedLevelName == "tutorial") {
 				Application.LoadLevel("main menu");
 			}
 
