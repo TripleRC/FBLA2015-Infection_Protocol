@@ -24,8 +24,7 @@ public class EnemyManager : MonoBehaviour
 
 	void Awake()
 	{
-		enemyCount = -96;
-	
+
 	}
 
     void Spawn ()

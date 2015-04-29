@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
 
-		h *= 0.0f; // limit left/right movement
+		h *= 0.2f; // limit left/right movement
 
 		Move (h, v);
 		Turning ();
@@ -75,8 +75,11 @@ public class PlayerMovement : MonoBehaviour
 		
 		movement = movement.normalized * movementSpeed * Time.deltaTime;
 
+		if(h != 0 && v != 0) transform.rotation = new Quaternion (rotation.x, -rotation.y, rotation.z, rotation.w);;
+		transform.Translate (new Vector3(movement.x, 0f, 0f));
+
 		transform.rotation = rotation;
-		transform.Translate (movement);
+		transform.Translate (new Vector3(0f, 0f, movement.z));
 		// playerRigidBody.MovePosition (transform.position + movement);
 	}
 
